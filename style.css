@@ -108,7 +108,7 @@ nav .fa-bars{
         height:100%;
         width:20%;
         top: 0;
-        right: 0;
+        left: -50%;
         text-align: left;
         z-index:2;
         transition:1s;
