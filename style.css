@@ -113,14 +113,14 @@ nav .fa-bars{
         z-index:2;
         transition:1s;
     }
-    nav .fa-bars{
+    nav .fa fa-bars{
         display: block;
         color: #181823;
         margin: 10px;
         font-size: 22px;
         cursor:pointer;
     }
-    nav .fa-times{
+    nav .fa fa-times{
         display: block;
         color: #181823;
         margin: 10px;
