@@ -28,7 +28,7 @@ nav img{
 .nav-links ul li{
     list-style:none;
     display:inline-block;
-    padding: 0px 10px 25px;
+    padding: 10px 10px 25px;
     position: relative;
 }
 .nav-links ul li a{
@@ -198,17 +198,25 @@ h3{
 }
 
 .footer{
+    font-family: 'Libre Barcode 128 Text', cursive;
+    background:#fff;
+
     width:100%;
     text-align: center;
     padding: 30px 0;
 
 }
 .footer h4{
+    font-family: 'Libre Barcode 128 Text', cursive;
+    color: #181823;
+    font-size: 25px;
     margin-bottom: 1px;
+    line-height: 32px;
     margin-top: 20px;
     font-weight: 600;
 }
 
 .footer p{
-    color: #181823;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    color: #000;
 }
