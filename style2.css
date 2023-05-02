@@ -19,7 +19,7 @@ nav{
     z-index: 100;
 }
 nav img{
-    width: 40px;
+    width:40px;
     position: 50px;
 }
 .nav-links{
@@ -265,13 +265,57 @@ h3{
         flex-direction: column;
     }
     h1{
-    text-align: left;
-    margin-left: 5%;
-    font-family: 'Black Ops One', cursive;
-    color: #c3ff00;
-    font-size: 200%;
-    font-weight: 600;
-} 
+        text-align: left;
+        margin-left: 5%;
+        font-family: 'Black Ops One', cursive;
+        color: #c3ff00;
+        font-size: 150%;
+        font-weight: 600;
+    } 
+    p{
+        font-family: 'Black Ops One', cursive;
+        color:#000;
+        font-size:15px;
+        font-weight:300;
+        line-height: 20px;
+        padding: 10px;
+    }
+    .row{
+        margin-top:10%;
+        display:flex;
+        
+    
+    
+    
+    }
+    .course-col{
+        flex-basis:20%;
+        background-color: #c3ff00;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        padding: 20px 20px;
+        margin: 3% auto;
+        width:80%;
+        transition: 0.5s;
+    }
+    h3{
+    
+        font-family: 'Black Ops One', cursive;
+        color:#000;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .course-col:hover{
+        background: #000;
+    }
+    .course-col:hover p{
+        color: #c3ff00;
+    }
+    .course-col:hover h3{
+        color: #c3ff00;
+    }
 }
 
 .footer{
