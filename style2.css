@@ -330,6 +330,7 @@ h3{
 }
 
 .footer{
+    font-family: 'Libre Barcode 128 Text', cursive;
     background-color: #000;
     width:100%;
     text-align: center;
@@ -337,12 +338,14 @@ h3{
 
 }
 .footer h4{
-    font-size: 10%;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: 25px;
     margin-bottom: 1px;
     margin-top: 20px;
     font-weight: 600;
 }
 
 .footer p{
-    color: #181823;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    color: #000;
 }
