@@ -109,13 +109,14 @@ nav .fa-bars{
         height: 10;
     }
     .text-box h1{
-        margin-left: -0.5%;
+        margin-left: -3%;
         text-align: left;
         font-family: 'Black Ops One', cursive;
         font-size: 450%;
     }
     .text-box h2{
         text-align: left;
+        margin-left: -3%;
         font-family: 'Black Ops One', cursive;
         font-size: 260%;
     }
