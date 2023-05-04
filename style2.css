@@ -108,6 +108,18 @@ nav .fa-bars{
     .header{
         height: 10;
     }
+    .hero-btn{
+        font-family: 'Black Ops One', cursive;
+        display: inline-block;
+        text-decoration: none;
+        color:#000; 
+        border: 1px solid #000;
+        padding: 12px 34px;
+        font-size: 13px;
+        margin-left: -3%;
+        background: transparent;
+        cursor:pointer;
+    }
     .text-box{
         width:90%;
         color:#000;
