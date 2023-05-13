@@ -241,6 +241,7 @@ h4{
 }
 
 .mother img{
+    width:30px;
     border-radius: 10px;
     width: 100%;
 }
