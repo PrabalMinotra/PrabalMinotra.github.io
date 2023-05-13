@@ -240,7 +240,7 @@ h4{
     transition: 0.5s;
 }
 
-col img{
+.mother img{
     border-radius: 10px;
     width: 100%;
 }
