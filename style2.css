@@ -5,7 +5,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background: #e5ff00;
+    background:#fff;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -19,9 +19,7 @@ nav{
 }
 nav img{
     width: 40px;
-    top: 50px;
-    left: 50px;
-    position: static;
+    position: 50px;
 }
 .nav-links{
     flex:1;
@@ -34,16 +32,16 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    font-family: 'Righteous', cursive;
-    color:#000;
+    font-family: 'Silkscreen', cursive;
+    color:#202120;
     text-decoration:none;
     font-size: 15px;
 }
 .nav-links ul li::after{
     content:'';
     width: 0%;
-    height: 12px;
-    background: #000;
+    height: 2px;
+    background: #202120;
     display: block;
     margin: auto;
     transition:0.3s;
@@ -53,7 +51,7 @@ nav img{
 }
 .text-box{
     width:90%;
-    color:#000;
+    color:#202120;
     position: absolute;
     top: 50%;
     left:50%;
@@ -61,29 +59,30 @@ nav img{
     text-align: center;
 }
 .text-box h1{
-    color: #000;
-    font-family: 'Righteous', cursive;
+    color: #202120;
+    font-family: 'Silkscreen', cursive;
     font-size: 500%;
 }
-.text-box h2{
-    color: #000;
-    font-family: 'Righteous', cursive;
+.text-box p{
+    font-family: 'Silkscreen', cursive;
     font-size: 20px;
 }
 .hero-btn{
-    font-family: 'Righteous', cursive;
     display: inline-block;
     text-decoration: none;
-    color:#000; 
-    border: 1px solid #000;
+    color:#202120; 
+    border: 1px solid #202120;
     padding: 12px 34px;
     font-size: 13px;
+    font-family: 'Silkscreen', cursive;
     background: transparent;
     cursor:pointer;
 }
 .hero-btn:hover{
-    border: 1px solid #000;
-    background:#000;
+    border: 1px solid #202120;
+    background:#202120;
+
+    
     transition: 1s;
 }
 
@@ -95,27 +94,20 @@ nav .fa-bars{
     display:none;
 }
 @media(max-width:700px){
-
-    nav img{
-        width: 40px;
-        top: 50px;
-        left: 50px;
-        position: static;
-    }
     .text-box h1{
         align-items: center;
-        font-family: 'Righteous', cursive;
+        font-family: 'Silkscreen', cursive;
         font-size: 300%;
     }
     .nav-links ul li{
         display: block;
     }
     .nav-links ul li a{
-        color:#e5ff00;
+        color:#fff;
     }
     .nav-links{
         position: absolute;
-        background: #000;
+        background: #202120;
         height:100%;
         width:20%;
         top: 0;
@@ -124,21 +116,9 @@ nav .fa-bars{
         z-index:2;
         transition:1s;
     }
-    .nav-links ul li::after{
-        content:'';
-        width: 0%;
-        height: 12px;
-        background: #e5ff00;
-        display: block;
-        margin: auto;
-        transition:0.3s;
-    }
-    .nav-links ul li:hover::after{
-        width: 100%;
-    }
     nav .fa-bars{
         display: block;
-        color: #000;
+        color: #fff;
         margin: 10px;
         font-size: 22px;
         cursor:pointer;
@@ -147,7 +127,7 @@ nav .fa-bars{
 
     nav .fa-times{
         display: block;
-        color: #e5ff00;
+        color: #202120;
         margin: 10px;
         font-size: 22px;
         cursor:pointer;
@@ -158,7 +138,7 @@ nav .fa-bars{
     }
 
 }
-/*-------course------*/
+/* -------course------
 .course{
     width: 70%;
     margin: auto;
@@ -166,21 +146,21 @@ nav .fa-bars{
     padding-top: 100px;
 }
 h1{
-    font-family: 'Righteous', cursive;
-    font-size: 200%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 300%;
     font-weight: 600;
 } 
 h4{
-    font-family: 'Righteous', cursive;
-    color:#000;
+    font-family: 'Poppins', sans-serif;
+    color:#181823;
     font-size:14px;
     font-weight:300;
     line-height: 22px;
     padding: 10px;
 }
 p{
-    font-family: 'Righteous', cursive;
-    color:#000;
+    font-family: 'Poppins', sans-serif;
+    color:#e9f8f9;
     font-size:14px;
     font-weight:300;
     line-height: 22px;
@@ -194,24 +174,22 @@ p{
 }
 .course-col{
     flex-basis:30%;
-    background: #e5ff00;
+    background-image: linear-gradient(#181823 ,#537fe7);
     border-radius: 10px;
-    margin-top: 5%;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
 }
 h3{
-    font-family: 'Righteous', cursive;
-    color:#000;
+    font-family: 'Poppins', sans-serif;
+    color:#e9f8f9;
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
 .course-col:hover{
-    background: #000;
-    color: #e5ff00;
+    background: linear-gradient(#c0eef2 ,#537fe7);
 
 
 }
@@ -221,6 +199,74 @@ h3{
         flex-direction: column;
     }
 }
+
+
+
+/*-------mother----*/
+/* .mother{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 300%;
+    font-weight: 600;
+} 
+h4{
+    font-family: 'Poppins', sans-serif;
+    color:#181823;
+    font-size:14px;
+    font-weight:300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+.roww{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+
+.col{
+    flex-basis:30%;
+    background-image: linear-gradient(#181823 ,#537fe7);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.mother img{
+    width: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+.col h4{
+    margin-top: 5%;
+    color: #fff;
+}
+
+
+.col:hover{
+    background: linear-gradient(#c0eef2 ,#537fe7);
+
+
+}
+
+@media(max-width:700px){
+    .roww{
+        flex-direction: column;
+    }
+}  */
+/*---------*/
+
 .footer{
     font-family: 'Libre Barcode 128 Text', cursive;
     background:#fff;
@@ -232,7 +278,7 @@ h3{
 }
 .footer h4{
     font-family: 'Libre Barcode 128 Text', cursive;
-    color: #181823;
+    color: #202120;
     font-size: 25px;
     margin-bottom: 1px;
     line-height: 32px;
@@ -242,5 +288,5 @@ h3{
 
 .footer p{
     font-family: 'Libre Barcode 128 Text', cursive;
-    color: #000;
+    color: #202120;
 }
