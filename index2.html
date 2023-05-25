@@ -48,7 +48,16 @@
     <h1>prabal minotra</h1>
     <p>designer, developer, photographer, human</p>
     <br>
-    <a href="index.html" class="hero-btn">- - -</a>
+    <a href="index.html" class="hero-btn" id='gg2'>- - -</a>
+    <script>
+        document.addEventListener('keydown', function(event) {
+          if (event.code === 'Space' && event.target === document.body) {
+            event.preventDefault();
+            document.getElementById('gg2').click();
+          }
+        });
+      </script>
+
 </div>
 </section>
 
