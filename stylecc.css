@@ -6,6 +6,7 @@ img {
     width: 70vh;
 
 }
+
 @media(max-width:700px){
     img{
         width:40vh;
@@ -28,10 +29,6 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-}
-nav img{
-    width: 40px;
-    position: 50px;
 }
 .nav-links{
     flex:1;
