@@ -1,140 +1,238 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: 'EB Garamond', serif;
-    box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+}
 
-}
-.about{
-    width: 100%;
-    padding:15% 5% ;
-}
-.about img {
-    width: 60vh;
-    margin-left: -3%;
-    margin-top: -10%;
+img {
+    width: 70vh;
 
 }
 
 
-.about-text{
-    margin-left: 40%;
-    width: auto;
-}
-/* .main{
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-
-} */
-
-@media(max-width:700px){
-
-    .about{
-        width: 100%;
-        padding:15% 5% ;
+@media(max-width:700px) {
+    img {
+        width: 40vh;
     }
-    .about img{
-        height: auto;
-        width: 420px;
-        align-items: center;
-    
-    }
-    
-    .about-text{
-
-    width: auto;
-}
-.about img{
-        width:40vh;
-}
-
-    
 }
 
 
 
 
 
-.header{
+.header {
     min-height: 100vh;
     width: 100%;
-    background:#fff;
+    background: #0D1317;
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-nav{
+nav {
+
     display: flex;
-    padding: 2% 6%;
+    padding: 2% 4.5%;
     justify-content: space-between;
     align-items: center;
 }
-.nav-links{
-    flex:1;
-    text-align:center;
 
+.nav-links {
+
+    flex: 1;
+    text-align: center;
 }
-.nav-links ul li{
-    list-style:none;
-    display:inline-block;
-    padding: 10px 10px 25px;
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px 25px;
     position: relative;
 }
 
-
-.nav-links ul li a{
-    font-family: 'EB Garamond', serif;
-    color:#000;
-    text-decoration:none;
-    font-size: 110%;
-}
-.nav-links ul li::after{
-    content:'';
-    width: 0%;
-    height: 2px;
-    background: #000;
-    display: block;
-    margin: auto;
-    transition:0.3s;
-}
-.nav-links ul li:hover::after{
-    width: 100%;
+.nav-links ul li a {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    color: cadetblue;
+    text-decoration: none;
+    font-size: 100%;
+    position: relative;
+    display: inline-block;
+    transition: transform 1s, color 0.3s;
+    /* Add transition for smooth effect */
 }
 
-@media(max-width:700px){
-    .nav-links ul li a{
+.nav-links ul li a:hover {
+    transform: scale(2);
+    /* Scale the link up by 2 times */
+    color: cornflowerblue;
+    font-weight: 500;
+}
+
+
+
+@media(max-width:700px) {
+    .nav-links ul li a {
         font-size: 80%;
     }
 }
 
 
+.text-box {
+    width: 90%;
+    color: #d8d8d8;
+    position: absolute;
+    top: 22%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.text-box h1 {
+    text-align: left;
+    color: d8d8d8;
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+
+    font-size: 300%;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+.text-box h1 b {
+    color: cadetblue;
+
+    font-weight: 400;
+}
+
+.text-box h1 b:hover {
+    color: cornflowerblue;
+
+    font-weight: 400;
+}
+
+.text-box p {
+    position: absolute;
+    width: 80%;
+
+    text-align: justify;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 130%;
+    color: rgb(200, 200, 200);
+}
+
+.text-box p b {
+    color: #d8d8d8;
+    font-size: 130%;
+    font-weight: 500;
+}
+
+.text-box p a {
+    color: cadetblue;
+    font-weight: 500;
+    font-size: 90%;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.text-box p a:hover {
+
+    color: cornflowerblue;
+
+}
 
 
-.footer{
-    font-family: 'Libre Barcode 128 Text', cursive;
-    background:#fff;
 
-    width:100%;
+
+
+
+.footer {
+    background: #0D1317;
+
+    width: 100%;
     text-align: center;
     padding: 30px 0;
 
 }
-.footer h4{
-    font-family: 'Libre Barcode 128 Text', cursive;
-    color: #000;
-    font-size: 25px;
+
+.footer h4 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(200, 200, 200);
     margin-bottom: 1px;
     line-height: 32px;
     margin-top: 20px;
-    font-weight: 600;
+
 }
 
-.footer p{
-    font-family: 'Libre Barcode 128 Text', cursive;
+.footer p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+    color: #fff;
+}
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #fff;
     color: #000;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    /* Position the tooltip below the text */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    /* Add some space between the text and the tooltip */
+    opacity: 0;
+    /* Start with the tooltip hidden */
+    transition: opacity 0.3s ease-in-out;
+    /* Smooth transition effect */
+}
+
+.tooltip .tooltiptext::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    /* Arrow at the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    /* Arrow color */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    /* Make the tooltip visible */
+}
+
+.tooltip img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }

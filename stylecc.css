@@ -1,290 +1,268 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
+
 img {
     width: 70vh;
 
 }
 
-@media(max-width:700px){
-    img{
-        width:40vh;
+@media(max-width:700px) {
+    img {
+        width: 40vh;
     }
 }
 
 
 
-.header{
+
+
+.header {
     min-height: 100vh;
     width: 100%;
-    background:#fff;
+    background: #0D1317;
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-nav{
+nav {
+
     display: flex;
-    padding: 2% 6%;
+    padding: 2% 4.5%;
     justify-content: space-between;
     align-items: center;
 }
-.nav-links{
-    flex:1;
-    text-align:center;
+
+.nav-links {
+
+    flex: 1;
+    text-align: center;
 }
-.nav-links ul li{
-    list-style:none;
-    display:inline-block;
-    padding: 10px 10px 25px;
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px 25px;
     position: relative;
 }
-.nav-links ul li a{
-    font-family: 'EB Garamond', serif;
-    color:#000;
-    text-decoration:none;
-    font-size: 110%;
+
+.nav-links ul li a {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    color: cadetblue;
+    text-decoration: none;
+    font-size: 100%;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.8s, color 0.5s;
+    /* Add transition for smooth effect */
 }
-.nav-links ul li::after{
-    content:'';
+
+.nav-links ul li a:hover {
+    transform: scale(2);
+    /* Scale the link up by 2 times */
+    color: cornflowerblue;
+    font-weight: 500;
+}
+
+/* .nav-links ul li::after {
+
+
+    content: '';
     width: 0%;
     height: 2px;
-    background: #000;
+    background: cornflowerblue;
     display: block;
     margin: auto;
-    transition:0.3s;
+    transition: 0.3s;
 }
-.nav-links ul li:hover::after{
+
+
+
+.nav-links ul li:hover::after {
+
     width: 100%;
-}
-@media(max-width:700px){
-    .nav-links ul li a{
+
+} */
+
+
+
+@media(max-width:700px) {
+    .nav-links ul li a {
         font-size: 80%;
     }
 }
 
 
-.text-box{
-    width:90%;
-    color:#000;
+.text-box {
+    width: 80%;
+    color: #d8d8d8;
     position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
-.text-box h1{
-    color: #000;
-    font-family: 'Imbue', serif;
-    font-size: 600%;
-}
-.text-box p{
-    font-family: 'EB Garamond', serif;    
-    font-size: 25px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
 }
 
+.text-box h1 {
 
+    color: d8d8d8;
 
-/* nav .fa-times{
-    display:none;
-}
-nav .fa-bars{
-    display:none;
-} */
-/* @media(max-width:700px){
-    .text-box h1{
-        align-items: center;
-        font-family: 'EB Garamond', serif;        font-size: 300%;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links ul li a{
-        color:#fff;
-    }
-    .nav-links{
-        position: absolute;
-        background: #000;
-        height:100%;
-        width:20%;
-        top: 0;
-        left:-50%;
-        text-align: left;
-        z-index:2;
-        transition:1s;
-    }
-    nav .fa-bars{
-        display: block;
-        color: #000;
-        margin: 10px;
-        font-size: 22px;
-        cursor:pointer;
-    }
-
-
-    nav .fa-times{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor:pointer;
-    }
-
-    .nav-links{
-        padding:20px;
-    }
-
-} */
-/* -------course------
-.course{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 300%;
-    font-weight: 600;
-} 
-h4{
-    font-family: 'Poppins', sans-serif;
-    color:#181823;
-    font-size:14px;
-    font-weight:300;
-    line-height: 22px;
-    padding: 10px;
-}
-p{
-    font-family: 'Poppins', sans-serif;
-    color:#e9f8f9;
-    font-size:14px;
-    font-weight:300;
-    line-height: 22px;
-    padding: 10px;
-}
-.row{
-    margin-top:5%;
-    display:flex;
-    justify-content: space-between;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 350%;
+    font-weight: 200;
+    font-style: normal;
 
 }
-.course-col{
-    flex-basis:30%;
-    background-image: linear-gradient(#181823 ,#537fe7);
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
+
+.text-box h1 b {
+    color: cadetblue;
+
+    font-weight: 400;
+}
+
+.text-box h1 b:hover {
+    color: cornflowerblue;
     transition: 0.5s;
-}
-h3{
-    font-family: 'Poppins', sans-serif;
-    color:#e9f8f9;
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-.course-col:hover{
-    background: linear-gradient(#c0eef2 ,#537fe7);
 
-
+    font-weight: 400;
 }
 
-@media(max-width:700px){
-    .row{
-        flex-direction: column;
-    }
+.text-box p {
+    text-align: left;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 150%;
+    color: rgb(200, 200, 200);
 }
 
-
-
-/*-------mother----*/
-/* .mother{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
+.text-box p b {
+    color: #d8d8d8;
+    font-weight: 500;
 }
 
-h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 300%;
-    font-weight: 600;
-} 
-h4{
-    font-family: 'Poppins', sans-serif;
-    color:#181823;
-    font-size:14px;
-    font-weight:300;
-    line-height: 22px;
-    padding: 10px;
+.text-box p a {
+    color: #d8d8d8;
+    font-weight: 500;
+    text-decoration: none;
 }
 
+.text-box p a:hover {
 
-.roww{
-    margin-top:5%;
-    display:flex;
-    justify-content: space-between;
-
-}
-
-
-.col{
-    flex-basis:30%;
-    background-image: linear-gradient(#181823 ,#537fe7);
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
+    color: cornflowerblue;
     transition: 0.5s;
+
 }
 
-.mother img{
-    width: 30px;
-    border-radius: 10px;
+.text-box a {
+    color: cadetblue;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.text-box a:hover {
+
+    color: cornflowerblue;
+    transition: 0.5s;
+
+}
+
+
+
+
+
+
+.footer {
+    background: #0D1317;
+
     width: 100%;
-}
-.col h4{
-    margin-top: 5%;
-    color: #fff;
-}
-
-
-.col:hover{
-    background: linear-gradient(#c0eef2 ,#537fe7);
-
-
-}
-
-@media(max-width:700px){
-    .roww{
-        flex-direction: column;
-    }
-}  */
-/*---------*/
-
-.footer{
-    font-family: 'Libre Barcode 128 Text', cursive;
-    background:#fff;
-
-    width:100%;
     text-align: center;
     padding: 30px 0;
 
 }
-.footer h4{
-    font-family: 'Libre Barcode 128 Text', cursive;
-    color: #000;
-    font-size: 25px;
+
+.footer h4 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(200, 200, 200);
     margin-bottom: 1px;
     line-height: 32px;
     margin-top: 20px;
-    font-weight: 600;
+
 }
 
-.footer p{
-    font-family: 'Libre Barcode 128 Text', cursive;
+.footer p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+    color: #fff;
+}
+
+
+
+.tooltip {
+
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+
+    visibility: hidden;
+    width: 200px;
+    background-color: #fff;
     color: #000;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    /* Position the tooltip below the text */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    /* Add some space between the text and the tooltip */
+    opacity: 0;
+    /* Start with the tooltip hidden */
+    transition: opacity 0.5s ease-in-out;
+    /* Smooth transition effect */
+}
+
+.tooltip .tooltiptext::after {
+
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    /* Arrow at the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    /* Arrow color */
+}
+
+.tooltip:hover .tooltiptext {
+
+    visibility: visible;
+    opacity: 1;
+    /* Make the tooltip visible */
+}
+
+.tooltip img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
