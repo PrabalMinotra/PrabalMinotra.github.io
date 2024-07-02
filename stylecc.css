@@ -93,6 +93,12 @@ nav {
 @media(max-width:700px) {
     .nav-links ul li a {
         font-size: 80%;
+
+
+    }
+
+    .nav-links ul li {
+        padding: 10px 10px 25px;
     }
 }
 
@@ -106,6 +112,14 @@ nav {
     transform: translate(-50%, -50%);
     text-align: justify;
 }
+
+@media(max-width:700px) {
+    .text-box {
+        top: 50%;
+        font-size: 60%;
+    }
+}
+
 
 .text-box h1 {
 
