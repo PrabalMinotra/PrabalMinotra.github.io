@@ -115,7 +115,7 @@ nav {
 
 @media(max-width:700px) {
     .text-box {
-        top: 50%;
+        top: 55%;
         font-size: 60%;
     }
 }
