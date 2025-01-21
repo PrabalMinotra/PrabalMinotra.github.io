@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muqaddar ka Sikandar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylecabo.css">
+    <style>
+        body {
+            font-family: 'Playfair Display SC', serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 60px;
+            font-weight:300;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 25px;
+            font-weight:100;
+            margin-bottom: 30px;
+            color: #666666;
+        }
+        .score-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 50px;
+        }
+        .player {
+            text-align: center;
+            flex: 1;
+        }
+        .player span {
+            display: block;
+        }
+        .name {
+            font-size: 25px;
+            color: #666;
+            
+            margin-bottom: 10px;
+        }
+        .score {
+            font-size: 120px;
+            
+            color: #333;
+            cursor: pointer;
+        }
+        .image-container {
+            text-align: center;
+            flex: 1;
+        }
+        .image-container img {
+            max-height: 350px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <!-- <li><a href="indexmeme.html">Me</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <div class="container">
+        <h1>Muqaddar ka Sikandar</h1>
+        <h2>All-Time Cabo Counter</h2>
+       
+        <div class="score-section">
+            <div class="player">
+                <span class="name">Prabal</span>
+                <span id="scorePrabal" class="score">0</span>
+            </div>
+            <div class="image-container">
+                <img src="cabo.jpg" alt="Skeleton Artwork">
+            </div>
+            <div class="player">
+                <span class="name">Swayam</span>
+                <span id="scoreSwayam" class="score">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Load scores from local storage or set defaults
+        function loadScores() {
+            document.getElementById('scorePrabal').innerText = localStorage.getItem('scorePrabal') || 0;
+            document.getElementById('scoreSwayam').innerText = localStorage.getItem('scoreSwayam') || 0;
+        }
+
+        // Function to update and store scores
+        function updateScore(player, change) {
+            let element = document.getElementById(player);
+            let currentScore = parseInt(element.innerText);
+            let newScore = currentScore + change;
+
+            // Prevent negative scores
+            if (newScore < 0) newScore = 0;
+
+            element.innerText = newScore;
+            localStorage.setItem(player, newScore);
+        }
+
+        // Keyboard event listener for score controls
+        document.addEventListener('keydown', function(event) {
+            switch (event.key) {
+                case 'ArrowUp':    // Increase Prabal's score
+                    updateScore('scorePrabal', 1);
+                    break;
+                case 'ArrowDown':  // Decrease Prabal's score
+                    updateScore('scorePrabal', -1);
+                    break;
+                case 'ArrowRight': // Increase Swayam's score
+                    updateScore('scoreSwayam', 1);
+                    break;
+                case 'ArrowLeft':  // Decrease Swayam's score
+                    updateScore('scoreSwayam', -1);
+                    break;
+            }
+        });
+
+        // Load scores on page load
+        window.onload = loadScores;
+    </script>
+</body>
+</html>

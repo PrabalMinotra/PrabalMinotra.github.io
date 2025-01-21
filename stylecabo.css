@@ -1,0 +1,49 @@
+.header {
+    align-items: center;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -5%;
+}
+
+nav {
+
+    display: flex;
+    padding: 1% 4.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px 0px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    color: #333;
+    text-decoration: none;
+    font-size: 100%;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.8s, color 0.5s;
+    /* Add transition for smooth effect */
+}
+
+.nav-links ul li a:hover {
+    transform: scale(2);
+    /* Scale the link up by 2 times */
+    color: rgb(148, 0, 27);
+    font-weight: 500;
+}
