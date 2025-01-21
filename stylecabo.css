@@ -47,3 +47,55 @@ nav {
     color: rgb(148, 0, 27);
     font-weight: 500;
 }
+
+@media(max-width:700px) {
+    .nav-links ul li a {
+        font-size: 70%;
+
+
+    }
+
+    .nav-links ul li {
+        padding: 10px 10px 25px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+        margin: 20px auto;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .score-section {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+    .player {
+        margin-bottom: 20px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .score {
+        font-size: 80px;
+    }
+    .image-container img {
+        max-height: 200px;
+        width: 100%;
+    }
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
