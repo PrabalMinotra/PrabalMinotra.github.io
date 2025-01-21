@@ -60,7 +60,23 @@
                     <span class="tooltiptext"><img src="prbl3.jpg" alt="Prabal Minotra"></span>
                 </span>,
                 <script>
-                    document.write(new Date().getFullYear() - 2005);
+
+                        function calculateAge(birthYear, birthMonth, birthDay) {
+                            const today = new Date();
+                            const birthDate = new Date(birthYear, birthMonth - 1, birthDay);
+                            let age = today.getFullYear() - birthDate.getFullYear();
+                            if (
+                                today.getMonth() < birthDate.getMonth() ||
+                                (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())
+                            ) {
+                                age--;
+                            }
+                            return age;
+                        }
+                    
+                        document.write(calculateAge(2005, 3, 26));
+
+                    
                 </script> and in my third year of pursuing CS at <a href="https://iiitd.ac.in/" target="_blank"
                     rel="noreferrer">Indraprastha
                     Institute of Information Technology, Delhi.</a> I adore solving <a
