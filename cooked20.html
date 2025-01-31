@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+
+    <link rel="icon" type="image/x-icon" href="emb.jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Kumar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Geostar+Fill&family=Revalia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <style>
+
+        /* Styling the signature image in the corner */
+        .corner-image {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 100px; /* Adjust as needed */
+            height: auto;
+            opacity: 0.8; /* Slight transparency */
+            
+        }
+
+        h1 {
+            z-index: 20;
+            font-size: 150px;
+            font-family: "UnifrakturCook", serif;
+            text-align: center;
+            margin-top: 20%;
+        }
+
+        s {
+            color:#bb0003;
+            text-decoration-color: #000;
+        }
+
+        
+        body{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .tooltip {
+
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+        
+            visibility: hidden;
+            width: auto;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            /* Position the tooltip below the text */
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 10px;
+            /* Add some space between the text and the tooltip */
+            opacity: 0;
+            /* Start with the tooltip hidden */
+            transition: opacity 0.5s ease-in-out;
+            /* Smooth transition effect */
+        }
+        
+        .tooltip .tooltiptext::after {
+        
+            content: 'Namaste Aunty';
+            font-family: 'Bebas Neue';
+            font-size: 75%;
+            color: #bb0003;
+            margin-bottom: 60%;
+            position: absolute;
+            bottom: 100%;
+            /* Arrow at the top of the tooltip */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            
+            border-color: transparent transparent #fff transparent;
+            /* Arrow color */
+        }
+        
+        .tooltip:hover .tooltiptext {
+        
+            visibility: visible;
+            opacity: 1;
+            /* Make the tooltip visible */
+        }
+        
+        .tooltip img {
+            width: 250px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Media Query for Phones */
+        @media (max-width: 900px) {
+            h1 {
+                font-size: 70px;
+                margin-top: 40%;
+            }
+
+            .corner-image {
+                width: 60px;
+            }
+
+            .tooltip img {
+                width: 150px;
+            }
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <!-- <img src = "twenty.png"> -->
+
+    <h1>  You're   <span class="tooltip"><b><s>old</s></b>
+        <span class="tooltiptext"><img src="twenty.png" alt="Prabal Minotra"></span>
+    </span> 20.</h1>
+    
+
+    
+    <!-- Signature Image in Bottom Right Corner -->
+    <a href="index.html"><img src="sign2.png" class="corner-image" alt="Signature"></a>
+
+    
+
+</body>
+</html>
