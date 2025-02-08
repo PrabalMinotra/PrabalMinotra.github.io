@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: #700002;
+  background: #8E095E;
 }
 
 h1 {
@@ -70,7 +70,7 @@ padding-bottom: 300;
   text-decoration: none;
   
   color: #ccc;
-.flip-clock-meridium a { color: #313333; 
+.flip-clock-meridium a { color: #fff; 
 }
  }
 
@@ -97,7 +97,7 @@ padding-bottom: 300;
     align-items: center;    /* Center vertically */
     height: 100vh;          /* Full viewport height */
     margin: 0;              /* Remove body margin */
-    background: #700002;       /* Optional: background for contrast */
+    background: #5C0143;       /* Optional: background for contrast */
   }
   
 .flip-clock-wrapper {
@@ -149,22 +149,18 @@ padding-bottom: 300;
 
 
 
-  
-
 .flip-clock-meridium {
   background: none !important;
   box-shadow: 0 0 0 !important;
   font-size: 36px !important; }
 
-.flip-clock-meridium a { color: #471717; }
+.flip-clock-meridium a { color: #fff; }
 
 .flip-clock-wrapper {
   text-align: center;
   position: absolute;
   width: 65%;
   margin: 1em;
-  
-  
   
 }
 
@@ -309,12 +305,12 @@ padding-bottom: 300;
   z-index: 1;
   width: 100%;
   height: 200%;
-  color: #FF6C6C;
+  color: #CC9EF8;
   display: flex; /* Flexbox for alignment */
   align-items: center; /* Vertical centering */
   justify-content: center; /* Horizontal centering */
   padding-top: 0%;
-  background-color: #FFF7EB;
+  background-color: #DAEFFE;
   /* background: url('texture.gif') no-repeat center center; */
   text-shadow: 80 80px px #000;
   
@@ -370,7 +366,7 @@ padding-bottom: 300;
   position: absolute;
   top: -1.5em;
   right: -86px;
-  color: black;
+  color: #FFF7EB;
   text-shadow: none; 
 }
 
