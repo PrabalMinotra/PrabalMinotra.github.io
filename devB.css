@@ -97,7 +97,7 @@ padding-bottom: 300;
     align-items: center;    /* Center vertically */
     height: 100vh;          /* Full viewport height */
     margin: 0;              /* Remove body margin */
-    background: #5C0143;       /* Optional: background for contrast */
+    background: #4a0025;       /* Optional: background for contrast */
   }
   
 .flip-clock-wrapper {
@@ -305,12 +305,12 @@ padding-bottom: 300;
   z-index: 1;
   width: 100%;
   height: 200%;
-  color: #CC9EF8;
+  color: #8555d8;
   display: flex; /* Flexbox for alignment */
   align-items: center; /* Vertical centering */
   justify-content: center; /* Horizontal centering */
   padding-top: 0%;
-  background-color: #DAEFFE;
+  background-color: #dee7ff;
   /* background: url('texture.gif') no-repeat center center; */
   text-shadow: 80 80px px #000;
   
